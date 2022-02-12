@@ -1,0 +1,352 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <!-- CSS -->
+  <link href="css/styles.css" rel="stylesheet">
+  <!-- Icons by Bootstrap Icons via https://icons.getbootstrap.com/ -->
+  <link rel="stylesheet" href="css/bootstrap-icons-1.5.0/bootstrap-icons.css">
+
+  <title>Restie Descaller </title>
+</head>
+
+<body>
+  <div class="container">
+    <div class="header">
+      <div class="header-item-container">
+        <div>
+          <h1 class="header-name-1">RESTIE DESCALLER</h1>
+          <p class="header-name-2">graphic designer</p>
+        </div>
+        <div class="header-contact-info">
+          <i class="bi bi-telephone-fill" style="margin-right: 1em;"></i>
+          <span style="font-family: 'Courier New', Courier, monospace;cursor: help;"
+            onmouseover="showInfo(this, 'phoneNumber')" onmouseout="showInfo(this, 'none')">
+            **** **** **** **** ****</span><br />
+          <i class="bi bi-envelope-fill" style="margin-right: 1em;"></i>
+          <span style="font-family: 'Courier New', Courier, monospace;cursor: help;"
+            onmouseover="showInfo(this, 'email')" onmouseout="showInfo(this, 'none')">
+            **** **** **** **** ****</span><br />
+          <i class="bi bi-geo-alt-fill" style="margin-right: 1em;"></i>
+          <span style="font-family: 'Courier New', Courier, monospace;cursor: help;"
+            onmouseover="showInfo(this, 'address')" onmouseout="showInfo(this, 'none')">
+            **** **** **** **** ****</span>
+        </div>
+      </div>
+      <!-- <br /> -->
+      <hr />
+      <hr />
+    </div>
+
+    <div class="content">
+      <!-- Tab links -->
+      <div class="tab">
+        <button class="tablinks" onclick="openTab(event, 'resume')" id="defaultTab">Résumé</button>
+        <button class="tablinks" onclick="openTab(event, 'pens-and-ink')">Pens & Ink</button>
+        <button class="tablinks" onclick="openTab(event, 'digital-colors')">Digital Colors</button>
+      </div>
+
+      <!-- Tab content: Resume -->
+      <div id="resume" class="tabcontent">
+
+        <!-- About Me -->
+        <div>
+          <button class="accordion">
+            <i class="bi bi-person-circle" style="font-size: x-large;margin-right: 1em;"></i>
+            <span>About Me</span>
+          </button>
+          <div class="panel">
+            <div class="panel-content">
+              <div class="content-and-image">
+                <div onmouseover="showOrHideImage('profilePic')" onmouseout="showOrHideImage('profilePic')"
+                  style="width: 50%;cursor: help;">
+                  A creative and enthusiastic artist. Currently a Multi Media Design and Development student looking for
+                  a part-time job. With experience in graphic designing and marketing. Also a bit of store keeping,
+                  merchandising and retail experience.
+                </div>
+                <div style="width: 50%;" class="center">
+                  <img width="120px" class="hide-image" id="profilePic" src="images/resume-tab/profile_pic.jpg" />
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Education -->
+        <div>
+          <button class="accordion">
+            <i class="bi bi-mortarboard-fill" style="font-size: x-large;margin-right: 1em;"></i>
+            <span>Education</span>
+          </button>
+          <div class="panel">
+            <div class="panel-content">
+              <div class="content-and-image">
+                <div onmouseover="showOrHideImage('universityOfTheEast')"
+                  onmouseout="showOrHideImage('universityOfTheEast')" style="width: 50%;cursor: help;">
+                  <strong>UNIVERSITY OF THE EAST</strong><br />
+                  Caloocan City, Philippines<br />
+                  Bachelor of Fine Arts Major in Advertising<br />
+                  Bachelors Degree<br />
+                  June, 2000 - October,2004
+                </div>
+                <div style="width: 50%;" class="center">
+                  <img width="120px" class="hide-image" id="universityOfTheEast"
+                    src="images/resume-tab/university_of_the_east_logo.png" />
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Software -->
+        <div>
+          <button class="accordion">
+            <i class="bi bi-laptop" style="font-size: x-large;margin-right: 1em;"></i>
+            <span>Software</span>
+          </button>
+          <div class="panel">
+            <div class="panel-content">
+              <div class="content-and-image">
+                <div style="width: 50%;">
+                  <ul style="margin: 0;">
+                    <li onmouseover="showOrHideListImage('software', 'adobeIllustrator')"
+                      onmouseout="showOrHideListImage('software', 'adobeIllustrator')" class="resume-li">
+                      Adobe Illustrator</li>
+                    <li onmouseover="showOrHideListImage('software', 'adobePhotoshop')"
+                      onmouseout="showOrHideListImage('software', 'adobePhotoshop')" class="resume-li">
+                      Adobe Photoshop</li>
+                    <li onmouseover="showOrHideListImage('software', 'adobePremiere')"
+                      onmouseout="showOrHideListImage('software', 'adobePremiere')" class="resume-li">
+                      Adobe Premiere</li>
+                    <li onmouseover="showOrHideListImage('software', 'adobeInDesign')"
+                      onmouseout="showOrHideListImage('software', 'adobeInDesign')" class="resume-li">
+                      Adobe InDesign</li>
+                    <li onmouseover="showOrHideListImage('software', 'corelDraw')"
+                      onmouseout="showOrHideListImage('software', 'corelDraw')" class="resume-li">
+                      CorelDRAW</li>
+                    <li onmouseover="showOrHideListImage('software', 'iMovie')"
+                      onmouseout="showOrHideListImage('software', 'iMovie')" class="resume-li">
+                      iMovie</li>
+                  </ul>
+                </div>
+                <div style="width: 50%;" class="center">
+                  <img width="200px" class="hide-image" id="software" />
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Interests -->
+        <div>
+          <button class="accordion">
+            <i class="bi bi-stars" style="font-size: x-large;margin-right: 1em;"></i>
+            <span>Interests</span>
+          </button>
+          <div class="panel">
+            <div class="panel-content">
+              <div class="content-and-image">
+                <div style="width: 50%;">
+                  <ul style="margin: 0;">
+                    <li onmouseover="showOrHideListImage('interests', 'comicbooks')"
+                      onmouseout="showOrHideListImage('interests', 'comicbooks')" class="resume-li">
+                      Comicbooks</li>
+                    <li onmouseover="showOrHideListImage('interests', 'illustration')"
+                      onmouseout="showOrHideListImage('interests', 'illustration')" class="resume-li">
+                      Illustration</li>
+                    <li onmouseover="showOrHideListImage('interests', 'artsAndCrafts')"
+                      onmouseout="showOrHideListImage('interests', 'artsAndCrafts')" class="resume-li">
+                      Arts & Crafts</li>
+                    <li onmouseover="showOrHideListImage('interests', 'toyCollecting')"
+                      onmouseout="showOrHideListImage('interests', 'toyCollecting')" class="resume-li">
+                      Toy Collecting</li>
+                    <li onmouseover="showOrHideListImage('interests', 'toyPhotography')"
+                      onmouseout="showOrHideListImage('interests', 'toyPhotography')" class="resume-li">
+                      Toy Photography</li>
+                    <li onmouseover="showOrHideListImage('interests', 'music')"
+                      onmouseout="showOrHideListImage('interests', 'music')" class="resume-li">
+                      Music</li>
+                    <li onmouseover="showOrHideListImage('interests', 'moviesOrSeries')"
+                      onmouseout="showOrHideListImage('interests', 'moviesOrSeries')" class="resume-li">
+                      Movies / Series</li>
+                    <li onmouseover="showOrHideListImage('interests', 'basketball')"
+                      onmouseout="showOrHideListImage('interests', 'basketball')" class="resume-li">
+                      Basketball</li>
+                    <li onmouseover="showOrHideListImage('interests', 'badminton')"
+                      onmouseout="showOrHideListImage('interests', 'badminton')" class="resume-li">
+                      Badminton</li>
+                  </ul>
+                </div>
+                <div style="width: 50%;" class="center">
+                  <img width="250px" class="hide-image" id="interests" />
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Work Experience -->
+        <div>
+          <button class="accordion">
+            <i class="bi bi-briefcase-fill" style="font-size: x-large;margin-right: 1em;">
+            </i><span>Work Experience</span>
+          </button>
+          <div class="panel">
+            <div class="panel-content">
+              <!-- Real Estate Masters -->
+              <div class="content-and-image">
+                <div onmouseover="showOrHideImage('realEstateMasters')"
+                  onmouseout="showOrHideImage('realEstateMasters')" style="width: 50%;cursor: help;">
+                  <strong>REAL ESTATE MASTERS</strong><br />
+                  <em>Marketing Coordinator</em><br />
+                  <small>(January 2019 - July 2021)</small><br />
+                  <ul style="margin: 0;">
+                    <li class="resume-li">
+                      Gathering marketing materials from developers to be able to produce any graphic-related items for
+                      marketing use and ensuring that their brand guidelines are well followed with every material that
+                      is
+                      being shared to clients
+                    </li>
+                    <li class="resume-li">
+                      Visiting locations of Units, Villas, Buildings, Apartments and surrounding areas for photo/video
+                      purposes to provide for the clients
+                    </li>
+                    <li class="resume-li">
+                      Getting in touch with Hotels and Mall Managements for Sales Stands coordination and maintaining
+                      good
+                      relations at all times
+                    </li>
+                  </ul>
+                </div>
+                <div style="width: 50%;" class="center">
+                  <img width="200px" class="hide-image" id="realEstateMasters"
+                    src="images/resume-tab/work-experience/real_estate_masters.jpeg" />
+                </div>
+              </div>
+              <div style="margin: 1em;"></div>
+              <!-- Azadea Group (Eataly) -->
+              <div class="content-and-image">
+                <div onmouseover="showOrHideImage('azadeaGroup')" onmouseout="showOrHideImage('azadeaGroup')"
+                  style="width: 50%;cursor: help;">
+                  <strong>AZADEA GROUP (Eataly)</strong><br />
+                  <em>Graphic Designer</em><br />
+                  <small>(August 2013 - March 2018)</small><br />
+                  <ul style="margin: 0;">
+                    <li class="resume-li">
+                      Creating designs and sample layouts based on knowledge of aesthetic design concepts while
+                      following
+                      up on their proper execution that ensures it is in line with the promotions' intended marketing
+                      calendar
+                    </li>
+                    <li class="resume-li">
+                      Implement cohesive internal & external advertising packages
+                    </li>
+                    <li class="resume-li">
+                      Creating physical crafts that the Executive Chef requires, be it in cake assistance or restaurant
+                      display.
+                    </li>
+                    <li class="resume-li">
+                      Communicate internally and externally with concerned parties to determine layout designs and
+                      implementation procedures
+                    </li>
+                    <li class="resume-li">
+                      Management of office equipments, i.e. printers, plotters, TV screens, projectors, etc.
+                    </li>
+                    <li class="resume-li">
+                      Conducting on the spot photoshoot for highlighted products and dishes for specific sales that the
+                      store wants to advertise
+                    </li>
+                    <li class="resume-li">
+                      Assisting customers whenever the restaurant/store is busy (granted the marketing department's
+                      needs
+                      are light around that time)
+                    </li>
+                  </ul>
+                </div>
+                <div style="width: 50%;" class="center">
+                  <img width="200px" class="hide-image" id="azadeaGroup"
+                    src="images/resume-tab/work-experience/azadea_group.png" />
+                </div>
+              </div>
+              <div style="margin: 1em;"></div>
+              <!--  -->
+              <div class="content-and-image">
+                <div onmouseover="showOrHideImage('alBoomMarine')" onmouseout="showOrHideImage('alBoomMarine')"
+                  style="width: 50%;cursor: help;">
+                  <strong>AL BOOM MARINE</strong><br />
+                  <em>Graphic Designer</em><br />
+                  <small>(July 2011 - July 2013)</small><br />
+                  <ul style="margin: 0;">
+                    <li class="resume-li">
+                      Produces window displays for stores, be it "Concept shops" or "Shop in Shops"
+                    </li>
+                    <li class="resume-li">
+                      Adhere to aesthetic design style guides, procedures, systems and templates of each specific Brand
+                    </li>
+                    <li class="resume-li">
+                      Coordinating with printing suppliers for the materialization of graphic displays (vinyl stickers,
+                      banners, boards, forex, acrylic, etc.)
+                    </li>
+                    <li class="resume-li">
+                      Assisting in store setups whenever shop openings are about to happen in ensuring that deadlines
+                      are
+                      being met by the whole team
+                    </li>
+                    <li class="resume-li">
+                      Lending a helping hand with customers in store when manpower is required
+                    </li>
+                  </ul>
+                </div>
+                <div style="width: 50%;" class="center">
+                  <img width="200px" class="hide-image" id="alBoomMarine"
+                    src="images/resume-tab/work-experience/al_boom_marine.jpeg" />
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Character Reference -->
+        <div>
+          <button class="accordion">
+            <i class="bi bi-people-fill" style="font-size: x-large;margin-right: 1em;"></i>
+            <span>Character Reference</span>
+          </button>
+          <div class="panel">
+            <div class="panel-content"> Available upon request. </div>
+          </div>
+        </div>
+
+      </div>
+
+      <!-- Tab content: Pens & Ink -->
+      <div id="pens-and-ink" class="tabcontent">
+        <div style="display: flex;justify-content: space-between;">
+          <button class="nav-button" onclick="prevImage('pens-and-ink-images')">
+            <i class="bi bi-caret-left-fill" style="margin-right: 1em;"></i>Prev</button>
+          <button class="nav-button" onclick="nextImage('pens-and-ink-images')">
+            Next<i class="bi bi-caret-right-fill" style="margin-left: 1em;"></i></button>
+        </div>
+        <br />
+        <img id="pens-and-ink-images" src="images/pens-and-ink-tab/0.jpg" width="100%" />
+      </div>
+
+      <!-- Tab content: Digital Colors -->
+      <div id="digital-colors" class="tabcontent">
+        <div style="display: flex;justify-content: space-between;">
+          <button class="nav-button" onclick="prevImage('digital-colors-images')">
+            <i class="bi bi-caret-left-fill" style="margin-right: 1em;"></i>Prev</button>
+          <button class="nav-button" onclick="nextImage('digital-colors-images')">
+            Next<i class="bi bi-caret-right-fill" style="margin-left: 1em;"></i></button>
+        </div>
+        <br />
+        <img id="digital-colors-images" src="images/digital-colors-tab/0.jpg" width="100%" />
+      </div>
+
+    </div>
+  </div>
+
+  <script onload="onPageLoad()" src="js/app.js"></script>
+</body>
+
+</html>

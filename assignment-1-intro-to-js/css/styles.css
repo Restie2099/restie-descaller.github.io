@@ -1,0 +1,187 @@
+/* Remove the space around the body tag */
+body {
+  margin: 0;
+  padding: 0;
+  background-color: gray;
+  font-family: sans-serif;
+}
+
+.container {
+  padding-left: 25vw;
+  padding-right: 25vw;
+}
+
+/**********************************
+ ** Styles applied to the header **
+ **********************************/
+.header {
+  background-color: maroon;
+  color: white;
+  padding: 3em 1em 1em 1em;
+}
+
+.header-item-container {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 1em;
+}
+
+.header-name-1 {
+  margin: 0;
+  text-transform: uppercase;
+}
+
+.header-name-2 {
+  margin: 0;
+  font-weight: 100;
+  text-transform: uppercase;
+}
+
+.header-contact-info {
+  /* text-align: right; */
+  font-size: small;
+}
+
+/***********************************
+ ** Styles applied to the content **
+ ***********************************/
+.content {
+  background-color: whitesmoke;
+}
+
+/********************************
+ ** Styles applied to the tabs **
+ ********************************/
+
+/* Style the tab */
+.tab {
+  overflow: hidden;
+  border: 1px solid #ccc;
+  background-color: #f1f1f1;
+}
+
+/* Style the buttons that are used to open the tab content */
+.tab button {
+  background-color: inherit;
+  float: left;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  padding: 14px 16px;
+  transition: 0.3s;
+}
+
+/* Change background color of buttons on hover */
+.tab button:hover {
+  background-color: #ddd;
+}
+
+/* Create an active/current tablink class */
+.tab button.active {
+  background-color: lightcoral;
+}
+
+/* Style the tab content */
+.tabcontent {
+  display: none;
+  padding: 6px 12px;
+  border: 1px solid #ccc;
+  border-top: none;
+  /* Fading effect takes 1 second */
+  animation: fadeEffect 1s;
+}
+
+/* Go from zero to full opacity */
+@keyframes fadeEffect {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+/**************************************
+ ** Styles applied to the accordions **
+ **************************************/
+
+/* Style the buttons that are used to open and close the accordion panel */
+.accordion {
+  /* background-color: #eee; */
+  /* color: #444; */
+  background-color: whitesmoke;
+  color: maroon;
+  cursor: pointer;
+  padding: 18px;
+  width: 100%;
+  text-align: left;
+  border: none;
+  border-bottom: 1px solid maroon;
+  outline: none;
+  transition: 0.4s;
+  font-size: large;
+  font-weight: bold;
+  padding: 0.5em;
+}
+
+/* Add a background color to the button if it is clicked on (add the .active class with JS), and when you move the mouse over it (hover) */
+.active-acc,
+.accordion:hover {
+  background-color: #ccc;
+}
+
+/* Style the accordion panel. Note: hidden by default */
+.panel {
+  padding: 0 18px;
+  background-color: whitesmoke;
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.2s ease-out;
+}
+
+.accordion:after {
+  content: '+';
+  color: maroon;
+  float: right;
+  margin-left: 5px;
+  font-weight: bold;
+  font-size: large;
+}
+
+.active-acc:after {
+  content: '-';
+}
+
+.panel-content {
+  padding: 1em;
+  padding-bottom: 2em;
+}
+
+.content-and-image {
+  display: flex;
+  width: 100%;
+  justify-content: flex-start;
+}
+
+.center {
+  align-items: center;
+  justify-content: center;
+  display: flex;
+}
+
+.hide-image {
+  display: none;
+}
+
+.resume-li {
+  cursor: help;
+  padding: 0.5em 0;
+}
+
+/**********************************************
+ ** Styles applied to the navigation buttons **
+ **********************************************/
+.nav-button {
+  font-size: large;
+  padding: 0.5em;
+}
